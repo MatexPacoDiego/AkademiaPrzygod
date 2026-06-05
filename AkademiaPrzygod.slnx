@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AkademiaPrzygod.Console/AkademiaPrzygod.Console.csproj" Id="9cecbe35-4c44-4b68-9171-03f9d4f71e9a" />
+  <Project Path="AkademiaPrzygod.Core/AkademiaPrzygod.Core.csproj" Id="d0bd215d-adf9-4e58-bf51-26174dd07269" />
+  <Project Path="AkademiaPrzygod.WPF/AkademiaPrzygod.WPF.csproj" Id="b289884f-a642-407f-a60e-7a1d454274d2" />
+</Solution>

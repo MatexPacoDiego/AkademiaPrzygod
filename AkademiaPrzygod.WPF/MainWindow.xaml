@@ -1,0 +1,122 @@
+﻿<Window x:Class="AkademiaPrzygod.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AkademiaPrzygod.WPF"
+        mc:Ignorable="d"
+        Title="⚔ Akademia Przygód" Height="500" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#1a1a2e">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!--header-->
+            <TextBlock Text="⚔️" 
+                       FontSize="60" 
+                       Foreground="Gold" 
+                       Margin="0,0,0,10" 
+                       HorizontalAlignment="Center"
+                       />
+
+            <TextBlock Text="AKADEMIA PRZYGÓD" 
+                       FontSize="28" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Foreground="#e0e0e0"
+                       />
+            
+            <TextBlock Text="v1.0" 
+                       FontSize="14" Foreground="#888"
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,40" 
+                       x:Name="tbWersja"
+                       />
+            
+            <!--buttons-->
+
+            <!--Nowa Gra / Wczytaj Gre-->
+            <Border Margin="0,0,0,12"
+                    Width="210"
+                    Height="50"
+                    Background="#533AB7"
+                    CornerRadius="10"
+                    >
+                <StackPanel Width="200"
+                            Height="45">
+                    <Button x:Name="btnNowaGra" 
+                    Content="⚔️ Nowa Gra"
+                    Width="200"
+                    Height="45"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Background="Transparent"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Click="BtnNowaGra_Click"
+                    />
+            <Button x:Name="btnWczytaj" 
+                    Content="⚔️ Wczytaj Grę"
+                    Width="200"
+                    Height="45"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Background="Transparent"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Click="BtnWczytajGre"
+                    Visibility="Collapsed"
+                    />
+                </StackPanel>
+                
+            </Border>
+
+            <!--Statystyki-->
+            <Border Margin="0,0,0,12"
+                    Width="210"
+                    Height="50"
+                    Background="#0f3460"
+                    CornerRadius="10"
+                    >
+                <Button x:Name="btnStatystyki" 
+                        Content="📊 Statystyki globalne"
+                        Width="200"
+                        Height="45"
+                        FontSize="16"
+                        FontWeight="Bold"
+                        Background="Transparent"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="BtnStatystyki_Click"
+                        />
+             </Border>
+            
+            <!--wyjscie-->
+            <Border Margin="0,0,0,12"
+                    Width="210"
+                    Height="50"
+                    Background="#333333"
+                    CornerRadius="10"
+                    >
+                <Button x:Name="btnWyjscie" 
+                        Content="✖ Wyjście"
+                        Width="200"
+                        Height="45"
+                        FontSize="16"
+                        FontWeight="Bold"
+                        Background="Transparent"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="BtnWyjscie_Click"
+                        />
+             </Border>
+            
+            
+
+        </StackPanel>
+    </Grid>
+</Window>

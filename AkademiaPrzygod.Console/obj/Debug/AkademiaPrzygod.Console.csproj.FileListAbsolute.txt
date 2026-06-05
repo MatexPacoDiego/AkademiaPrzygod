@@ -1,0 +1,10 @@
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\bin\Debug\AkademiaPrzygod.Core.dll
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\bin\Debug\AkademiaPrzygod.Core.pdb
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\obj\Debug\AkademiaPrzygod.Console.csproj.AssemblyReference.cache
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\obj\Debug\AkademiaPrzygod.Console.csproj.CoreCompileInputs.cache
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\obj\Debug\Akademia.D9721D51.Up2Date
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\bin\Debug\AkademiaPrzygod.ConsoleApp.exe.config
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\bin\Debug\AkademiaPrzygod.ConsoleApp.exe
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\bin\Debug\AkademiaPrzygod.ConsoleApp.pdb
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\obj\Debug\AkademiaPrzygod.ConsoleApp.exe
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Console\obj\Debug\AkademiaPrzygod.ConsoleApp.pdb

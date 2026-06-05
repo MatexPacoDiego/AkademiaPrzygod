@@ -1,0 +1,6 @@
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Core\bin\Debug\AkademiaPrzygod.Core.dll
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Core\bin\Debug\AkademiaPrzygod.Core.pdb
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Core\obj\Debug\AkademiaPrzygod.Core.csproj.AssemblyReference.cache
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Core\obj\Debug\AkademiaPrzygod.Core.csproj.CoreCompileInputs.cache
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Core\obj\Debug\AkademiaPrzygod.Core.dll
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.Core\obj\Debug\AkademiaPrzygod.Core.pdb
