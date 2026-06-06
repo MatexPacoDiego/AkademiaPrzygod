@@ -30,7 +30,7 @@ namespace AkademiaPrzygod.Core.Models
             Nazwa = nazwa;
             _towar = new List<Przedmiot>();
             DodajTowar(new Przedmiot("🧃 Gumijagody", TypPrzedmiotu.Mikstura, 50, "⛑️ Leczy 30 HP"));
-            DodajTowar(new Przedmiot("🧙 Różdżka Ognia", TypPrzedmiotu.Bron, 100, "⚔️ Zwiększa atak o 5"));
+            DodajTowar(new Przedmiot("🧙 Różdżka Ognia", TypPrzedmiotu.Broń, 100, "⚔️ Zwiększa atak o 5"));
             DodajTowar(new Przedmiot("🛡️ Tarcza Zaklęć", TypPrzedmiotu.Zbroja, 80, "🤚 Zwiększa obronę o 5"));
         }
 
@@ -46,14 +46,15 @@ namespace AkademiaPrzygod.Core.Models
         /// <summary>
         /// Wyświetla ofertę sklepu.
         /// </summary>
-        public void PokazOferte()
+        public List<string> PokazOferte()
         {
-            Console.WriteLine($"=== {Nazwa} ===");
-            for (int i = 0; i < _towar.Count; i++)
+            int liczbaPorzad = 1;
+            List<string> listaTowarow = new List<string>();
+            foreach(Przedmiot p in _towar)
             {
-                Console.WriteLine($"{i + 1}. {_towar[i].Nazwa} - {_towar[i].Wartosc} złota");
-                Console.WriteLine($"{_towar[i].Opis}");
+                listaTowarow.Add($"{liczbaPorzad++}. {p.Nazwa} - {p.Wartosc} złota - {p.Opis}");
             }
+            return listaTowarow;
         }
 
         /// <summary>

@@ -106,7 +106,7 @@ namespace AkademiaPrzygod.Core.Models
         /// <returns>Liczba zadanych obrażeń.</returns>
         public int AtakujBohatera(Bohater cel)
         {
-            int obrazenia = Math.Max(1, Atak - cel.Obrona);
+            int obrazenia = Math.Max(1, Atak - cel.Obrona);  // tu liczymy
             cel.OtrzymajObrazenia(obrazenia);
             return obrazenia;
         }
@@ -117,8 +117,7 @@ namespace AkademiaPrzygod.Core.Models
         /// <param name="obrazenia">Liczba obrażeń do zadania.</param>
         public void OtrzymajObrazenia(int obrazenia)
         {
-            int faktyczneObrazenia = Math.Max(1, obrazenia - Obrona);
-            Zdrowie -= faktyczneObrazenia;
+            Zdrowie -= obrazenia;
             if (Zdrowie < 0) Zdrowie = 0;
         }
 

@@ -11,7 +11,7 @@ namespace AkademiaPrzygod.Core.Enums
     /// </summary>
     public enum TypPrzedmiotu
     {
-        Bron,
+        Broń,
         Zbroja,
         Mikstura,
         Misc

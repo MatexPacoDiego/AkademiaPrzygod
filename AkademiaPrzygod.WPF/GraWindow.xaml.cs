@@ -1,31 +1,21 @@
 ﻿using AkademiaPrzygod.Core.Enums;
 using AkademiaPrzygod.Core.Models;
 using AkademiaPrzygod.Core.Static;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 
 namespace AkademiaPrzygod.WPF
 {
     /// <summary>
-    /// Logika interakcji dla klasy GraWindow.xaml
+    /// Okno głównej pętli gry – eksploracja, sklep, ekwipunek.
     /// </summary>
     public partial class GraWindow : Window
     {
         private List<Lokacja> _lokacje;
- 
+
+        /// <summary>
+        /// Inicjuje okno gry, tworzy lokacje i odświeża statystyki bohatera.
+        /// </summary>
         public GraWindow()
         {
             InitializeComponent();
@@ -33,6 +23,9 @@ namespace AkademiaPrzygod.WPF
             statsControl.Odswiez(Statystyki.Bohater);
         }
 
+        /// <summary>
+        /// Tworzy i wypełnia listę lokacji dostępnych w grze.
+        /// </summary>
         public void ZainicjujLokacje()
         {
             _lokacje = new List<Lokacja>();
@@ -58,31 +51,74 @@ namespace AkademiaPrzygod.WPF
             _lokacje.Add(wieza);
 
             int liczbaPorz = 1;
-            foreach(Lokacja lokacja in _lokacje)
+            foreach (Lokacja lokacja in _lokacje)
             {
-                ListaLokacji.Items.Add($"{liczbaPorz++}. {lokacja.Nazwa} - {lokacja.Opis}" );
-              
+                ListaLokacji.Items.Add($"{liczbaPorz++}. {lokacja.Nazwa} - {lokacja.Opis}");
             }
         }
 
-
+        /// <summary>
+        /// Obsługuje eksplorację wybranej lokacji – losuje spotkanie z wrogiem lub przedmiotem.
+        /// </summary>
         private void BtnEksploruj_Click(object sender, RoutedEventArgs e)
         {
+            if (ListaLokacji.SelectedItem != null)
+            {
+                Lokacja lokacja = _lokacje[ListaLokacji.SelectedIndex];
+                object spotkanie = lokacja.LosujSpotkanie();
 
+                if (spotkanie is Wrog wrog)
+                {
+                    var okno = new WalkaWindow(wrog);
+                    okno.Show();
+                    this.Close();
+                    statsControl.Odswiez(Statystyki.Bohater);
+                }
+                else if (spotkanie is Przedmiot przedmiot)
+                {
+                    if (Statystyki.Bohater.DodajPrzedmiot(przedmiot))
+                    {
+                        statsControl.Odswiez(Statystyki.Bohater);
+                        Statystyki.ZebranePrzedmioty++;
+                        new KomunikatWindow($"Znalazłeś: {przedmiot.Nazwa}!\nDodano do ekwipunku.").ShowDialog();
+                    }
+                    else
+                        new KomunikatWindow("Ekwipunek pełny").ShowDialog();
+                }
+                else
+                {
+                    new KomunikatWindow("Nic tu nie ma...").ShowDialog();
+                }
+            }
+            else
+            {
+                new KomunikatWindow("Wybierz najpierw lokację").ShowDialog();
+            }
         }
 
+        /// <summary>
+        /// Otwiera okno sklepu i zamyka okno gry.
+        /// </summary>
         private void BtnSklep_Click(object sender, RoutedEventArgs e)
         {
-
+            SklepWindow sklepOkno = new SklepWindow();
+            sklepOkno.Show();
+            this.Close();
         }
 
+        /// <summary>
+        /// Otwiera okno ekwipunku i zamyka okno gry.
+        /// </summary>
         private void BtnEkwipunek_Click(object sender, RoutedEventArgs e)
         {
-            EkwipunekWindow oknoEkwipunek = new EkwipunekWindow();
+            EkwipunekWindow oknoEkwipunek = new EkwipunekWindow("Main");
             oknoEkwipunek.Show();
             this.Close();
         }
 
+        /// <summary>
+        /// Wraca do menu głównego i zamyka okno gry.
+        /// </summary>
         private void BtnWroc_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainOkno = new MainWindow();

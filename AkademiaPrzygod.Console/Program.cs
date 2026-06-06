@@ -12,6 +12,9 @@ namespace AkademiaPrzygod.ConsoleApp
         static List<Lokacja> _lokacje;
         static Sklep _sklep;
 
+        /// <summary>
+        /// Punkt wejścia aplikacji. Inicjuje lokacje i uruchamia menu główne.
+        /// </summary>
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -19,6 +22,9 @@ namespace AkademiaPrzygod.ConsoleApp
             MenuGlowne();
         }
 
+        /// <summary>
+        /// Wyświetla menu główne i obsługuje wybór gracza.
+        /// </summary>
         static void MenuGlowne()
         {
             while (true)
@@ -35,27 +41,30 @@ namespace AkademiaPrzygod.ConsoleApp
                 string wybor = Console.ReadLine();
                 switch (wybor)
                 {
-                    case "1": 
-                        NowaGra(); 
+                    case "1":
+                        NowaGra();
                         break;
                     case "2":
                         Console.WriteLine();
                         Statystyki.PokazPodsumowanie();
                         Console.WriteLine("\nWciśnij dowolny przycisk aby kontynuować");
-                        Console.ReadKey(); 
+                        Console.ReadKey();
                         break;
                     case "0":
                         Console.WriteLine("👋 Żegnaj");
                         return;
-                    default: 
+                    default:
                         Console.WriteLine("Zła opcja!");
                         Console.WriteLine("\nWciśnij dowolny przycisk aby kontynuować");
-                        Console.ReadKey(); 
+                        Console.ReadKey();
                         break;
                 }
             }
         }
 
+        /// <summary>
+        /// Obsługuje tworzenie nowej gry – pobiera imię i klasę bohatera.
+        /// </summary>
         static void NowaGra()
         {
             Console.Clear();
@@ -73,7 +82,7 @@ namespace AkademiaPrzygod.ConsoleApp
             Console.WriteLine("1. Wojownik (HP: 120, Atak: 20, Obrona: 15)");
             Console.WriteLine("2. Mag      (HP:  80, Atak: 30, Obrona:  8)");
             Console.WriteLine("3. Łotrzyk  (HP: 100, Atak: 25, Obrona: 10)");
-   
+
             KlasaPostaci klasa = KlasaPostaci.Wojownik;
             bool poprawnaKlasa = false;
             while (!poprawnaKlasa)
@@ -81,20 +90,20 @@ namespace AkademiaPrzygod.ConsoleApp
                 Console.Write("Wybór (1-3): ");
                 switch (Console.ReadLine())
                 {
-                    case "1": 
-                        klasa = KlasaPostaci.Wojownik; 
+                    case "1":
+                        klasa = KlasaPostaci.Wojownik;
                         poprawnaKlasa = true;
                         break;
-                    case "2": 
-                        klasa = KlasaPostaci.Mag; 
-                        poprawnaKlasa = true; 
+                    case "2":
+                        klasa = KlasaPostaci.Mag;
+                        poprawnaKlasa = true;
                         break;
-                    case "3": 
-                        klasa = KlasaPostaci.Lotrzyk; 
-                        poprawnaKlasa = true; 
+                    case "3":
+                        klasa = KlasaPostaci.Lotrzyk;
+                        poprawnaKlasa = true;
                         break;
-                    default: 
-                        Console.WriteLine("Wpisz 1, 2 lub 3!"); 
+                    default:
+                        Console.WriteLine("Wpisz 1, 2 lub 3!");
                         break;
                 }
             }
@@ -108,6 +117,9 @@ namespace AkademiaPrzygod.ConsoleApp
             MenuGry();
         }
 
+        /// <summary>
+        /// Główna pętla gry – wyświetla menu i obsługuje akcje gracza.
+        /// </summary>
         static void MenuGry()
         {
             while (_bohater.CzyZyje())
@@ -123,21 +135,21 @@ namespace AkademiaPrzygod.ConsoleApp
 
                 switch (Console.ReadLine())
                 {
-                    case "1": 
-                        Eksploruj(); 
+                    case "1":
+                        Eksploruj();
                         break;
-                    case "2": 
-                        OtworzSklep(); 
+                    case "2":
+                        OtworzSklep();
                         break;
-                    case "3": 
-                        PokazEkwipunek(); 
+                    case "3":
+                        PokazEkwipunek();
                         break;
-                    case "4": 
+                    case "4":
                         _bohater.PokazStatystyki();
                         Console.WriteLine("\nWciśnij dowolny przycisk aby kontynuować");
-                        Console.ReadKey(); 
+                        Console.ReadKey();
                         break;
-                    case "0": 
+                    case "0":
                         return;
                 }
             }
@@ -146,6 +158,9 @@ namespace AkademiaPrzygod.ConsoleApp
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Obsługuje eksplorację lokacji – losuje spotkanie z wrogiem lub przedmiotem.
+        /// </summary>
         static void Eksploruj()
         {
             Console.Clear();
@@ -156,7 +171,9 @@ namespace AkademiaPrzygod.ConsoleApp
             Console.Write("Wybór: ");
             if (!int.TryParse(Console.ReadLine(), out int wybor) || wybor < 1 || wybor > _lokacje.Count)
             {
-                Console.WriteLine("Zła opcja!"); Console.ReadKey(); return;
+                Console.WriteLine("Zła opcja!");
+                Console.ReadKey();
+                return;
             }
 
             Lokacja lokacja = _lokacje[wybor - 1];
@@ -172,7 +189,6 @@ namespace AkademiaPrzygod.ConsoleApp
             else if (spotkanie is Przedmiot przedmiot)
             {
                 Console.WriteLine($"\nZnalazłeś: {przedmiot.Nazwa}!");
-
                 if (_bohater.DodajPrzedmiot(przedmiot))
                 {
                     Console.WriteLine("Dodano do ekwipunku!");
@@ -190,6 +206,10 @@ namespace AkademiaPrzygod.ConsoleApp
             }
         }
 
+        /// <summary>
+        /// Prowadzi turową walkę między bohaterem a wrogiem.
+        /// </summary>
+        /// <param name="wrog">Wróg z którym bohater walczy.</param>
         static void ProwadzWalke(Wrog wrog)
         {
             Walka walka = new Walka(_bohater, wrog);
@@ -280,13 +300,20 @@ namespace AkademiaPrzygod.ConsoleApp
             }
         }
 
+        /// <summary>
+        /// Obsługuje interfejs sklepu – wyświetla ofertę i umożliwia zakup.
+        /// </summary>
         static void OtworzSklep()
         {
             while (true)
             {
                 Console.Clear();
                 Console.WriteLine($"Złoto: {_bohater.Zloto}");
-                _sklep.PokazOferte();
+                Console.WriteLine($"=== {_sklep.Nazwa} ===");
+                foreach (string towar in _sklep.PokazOferte())
+                {
+                    Console.WriteLine(towar);
+                }
                 Console.WriteLine("\nWybierz numer przedmiotu lub 0 aby wyjść:");
                 Console.Write("Wybór: ");
 
@@ -302,6 +329,9 @@ namespace AkademiaPrzygod.ConsoleApp
             }
         }
 
+        /// <summary>
+        /// Wyświetla ekwipunek bohatera i umożliwia użycie przedmiotu.
+        /// </summary>
         static void PokazEkwipunek()
         {
             Console.Clear();
@@ -326,6 +356,9 @@ namespace AkademiaPrzygod.ConsoleApp
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Tworzy i wypełnia listę lokacji dostępnych w grze.
+        /// </summary>
         static void ZainicjujLokacje()
         {
             _lokacje = new List<Lokacja>();

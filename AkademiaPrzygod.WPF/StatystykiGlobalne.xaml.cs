@@ -1,25 +1,16 @@
 ﻿using AkademiaPrzygod.Core.Static;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace AkademiaPrzygod.WPF
 {
     /// <summary>
-    /// Logika interakcji dla klasy StatystykiGlobalne.xaml
+    /// Okno statystyk globalnych – wyświetla podsumowanie całej sesji gry.
     /// </summary>
     public partial class StatystykiGlobalne : Window
     {
+        /// <summary>
+        /// Inicjuje okno i wyświetla aktualne statystyki globalne sesji.
+        /// </summary>
         public StatystykiGlobalne()
         {
             InitializeComponent();
@@ -28,6 +19,9 @@ namespace AkademiaPrzygod.WPF
             tbStatPrzedmioty.Text = Statystyki.ZebranePrzedmioty.ToString();
         }
 
+        /// <summary>
+        /// Wraca do menu głównego i zamyka okno statystyk.
+        /// </summary>
         private void BtnWroc_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainOkno = new MainWindow();

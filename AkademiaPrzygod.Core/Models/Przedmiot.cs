@@ -60,7 +60,7 @@ namespace AkademiaPrzygod.Core.Models
                 b.Ulecz(30);
                 Console.WriteLine($"Użyto {Nazwa} – uleczono 30 HP!");
             }
-            else if (Typ == TypPrzedmiotu.Bron)
+            else if (Typ == TypPrzedmiotu.Broń)
             {
                 b.ZwiekszAtak(5);
                 Console.WriteLine($"Użyto {Nazwa} – atak wzrósł o 5!");

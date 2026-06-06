@@ -1,27 +1,16 @@
-﻿using AkademiaPrzygod.Core.Models;
-using AkademiaPrzygod.Core.Static;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AkademiaPrzygod.Core.Static;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace AkademiaPrzygod.WPF
 {
     /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
+    /// Ekran powitalny – menu główne aplikacji.
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Inicjuje okno główne, ustawia wersję gry i sprawdza czy istnieje bohater.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -29,22 +18,31 @@ namespace AkademiaPrzygod.WPF
             CzyJestBohater();
         }
 
+        /// <summary>
+        /// Otwiera okno statystyk globalnych.
+        /// </summary>
         private void BtnStatystyki_Click(object sender, RoutedEventArgs e)
         {
-            StatystykiGlobalne oknoStatystyki=new StatystykiGlobalne();
+            StatystykiGlobalne oknoStatystyki = new StatystykiGlobalne();
             oknoStatystyki.Show();
             this.Close();
         }
 
+        /// <summary>
+        /// Sprawdza czy bohater już istnieje i odpowiednio pokazuje przyciski.
+        /// </summary>
         private void CzyJestBohater()
         {
             if (Statystyki.Bohater != null)
             {
-                btnNowaGra.Visibility=Visibility.Collapsed;
-                btnWczytaj.Visibility=Visibility.Visible;
+                btnNowaGra.Visibility = Visibility.Collapsed;
+                btnWczytaj.Visibility = Visibility.Visible;
             }
         }
 
+        /// <summary>
+        /// Otwiera okno tworzenia postaci.
+        /// </summary>
         private void BtnNowaGra_Click(object sender, RoutedEventArgs e)
         {
             TworzeniePostaci oknoPostac = new TworzeniePostaci();
@@ -52,16 +50,22 @@ namespace AkademiaPrzygod.WPF
             this.Close();
         }
 
+        /// <summary>
+        /// Zamyka aplikację.
+        /// </summary>
         private void BtnWyjscie_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
 
+        /// <summary>
+        /// Wczytuje istniejącą grę i otwiera okno gry.
+        /// </summary>
         private void BtnWczytajGre(object sender, RoutedEventArgs e)
         {
-            GraWindow oknoGry=new GraWindow();
-            this.Close();
+            GraWindow oknoGry = new GraWindow();
             oknoGry.Show();
+            this.Close();
         }
     }
 }

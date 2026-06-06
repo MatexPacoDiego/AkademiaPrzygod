@@ -27,3 +27,9 @@ C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Deb
 C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\EkwipunekWindow.g.cs
 C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\EkwipunekWindow.baml
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\SklepWindow.g.cs
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\SklepWindow.baml
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\WalkaWindow.g.cs
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\WalkaWindow.baml
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\KomunikatWindow.g.cs
+C:\Users\28mat\Documents\szkoła\WPF\AkademiaPrzygod\AkademiaPrzygod.WPF\obj\Debug\KomunikatWindow.baml

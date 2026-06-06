@@ -88,7 +88,7 @@ namespace AkademiaPrzygod.Core.Models
             Klasa = klasa;
             _ekwipunek = new List<Przedmiot>();
             Poziom = 1;
-            Zloto = 50;
+            Zloto = 100;
 
             UstawStatystyki(Klasa);
         }
@@ -124,7 +124,7 @@ namespace AkademiaPrzygod.Core.Models
         /// </summary>
         public int AtakujWroga(Wrog cel)
         {
-            int obrazenia = Math.Max(1, Atak - cel.Obrona);
+            int obrazenia = Math.Max(1, Atak - cel.Obrona);  
             cel.OtrzymajObrazenia(obrazenia);
             return obrazenia;
         }
@@ -134,8 +134,7 @@ namespace AkademiaPrzygod.Core.Models
         /// </summary>
         public void OtrzymajObrazenia(int obrazenia)
         {
-            int faktyczneObrazenia = Math.Max(1, obrazenia - Obrona);
-            Zdrowie -= faktyczneObrazenia;
+            Zdrowie -= obrazenia;
         }
 
         /// <summary>

@@ -61,6 +61,12 @@
     <Compile Include="GraWindow.xaml.cs">
       <DependentUpon>GraWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KomunikatWindow.xaml.cs">
+      <DependentUpon>KomunikatWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SklepWindow.xaml.cs">
+      <DependentUpon>SklepWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StatystykiControl.xaml.cs">
       <DependentUpon>StatystykiControl.xaml</DependentUpon>
     </Compile>
@@ -70,11 +76,18 @@
     <Compile Include="TworzeniePostaci.xaml.cs">
       <DependentUpon>TworzeniePostaci.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WalkaWindow.xaml.cs">
+      <DependentUpon>WalkaWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="EkwipunekWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GraWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KomunikatWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,6 +103,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SklepWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StatystykiControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -99,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TworzeniePostaci.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WalkaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
