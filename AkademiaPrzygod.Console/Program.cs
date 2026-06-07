@@ -33,7 +33,16 @@ namespace AkademiaPrzygod.ConsoleApp
                 Console.WriteLine("╔════════════════════════════╗");
                 Console.WriteLine($"║    AKADEMIA PRZYGÓD v{Konfiguracja.WersjaGry}   ║");
                 Console.WriteLine("╚════════════════════════════╝");
-                Console.WriteLine("1. Nowa gra");
+                if (_bohater != null)
+                {
+                    Console.WriteLine("1. Wczytaj grę");
+                }
+                else
+                {
+                    Console.WriteLine("1. Nowa gra");
+                }
+                
+                
                 Console.WriteLine("2. Statystyki globalne");
                 Console.WriteLine("0. Wyjście");
                 Console.Write("\nWybierz opcję: ");
@@ -42,7 +51,15 @@ namespace AkademiaPrzygod.ConsoleApp
                 switch (wybor)
                 {
                     case "1":
-                        NowaGra();
+                        if (_bohater != null)
+                        {
+                            MenuGry();
+                        }
+                        else
+                        {
+                            NowaGra();
+                        }
+                        
                         break;
                     case "2":
                         Console.WriteLine();
@@ -320,10 +337,10 @@ namespace AkademiaPrzygod.ConsoleApp
                 if (!int.TryParse(Console.ReadLine(), out int wybor)) continue;
                 if (wybor == 0) return;
 
-                if (_sklep.Kup(_bohater, wybor - 1))
+                if (_sklep.Kup(_bohater, wybor - 1) && _bohater.PobierzEkwipunek().Count+1<=Konfiguracja.MaksymalnyEkwipunek)
                     Console.WriteLine("Zakup udany!");
                 else
-                    Console.WriteLine("Za mało złota lub zły numer!");
+                    Console.WriteLine("Za mało złota / zły numer! / za mało miejsca w ekwipunku");
                 Console.WriteLine("\nWciśnij dowolny przycisk aby kontynuować");
                 Console.ReadKey();
             }

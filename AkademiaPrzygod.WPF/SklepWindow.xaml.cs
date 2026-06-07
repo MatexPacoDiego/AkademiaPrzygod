@@ -40,7 +40,7 @@ namespace AkademiaPrzygod.WPF
                 new KomunikatWindow("Nie ma produktów w sklepie").ShowDialog();
                 return;
             }
-            if (Statystyki.Bohater.PobierzEkwipunek().Count + 1 > 10)
+            if (Statystyki.Bohater.PobierzEkwipunek().Count + 1 > Konfiguracja.MaksymalnyEkwipunek)
             {
                 new KomunikatWindow("Zakup nie udany. Ekwipunek jest pełny").ShowDialog();
                 return;
