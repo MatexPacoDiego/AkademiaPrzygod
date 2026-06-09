@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CECBE35-4C44-4B68-9171-03F9D4F71E9A}|AkademiaPrzygod.Console\\AkademiaPrzygod.Console.csproj|c:\\users\\28mat\\documents\\szko\u0142a\\wpf\\akademiaprzygod\\akademiaprzygod.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9CECBE35-4C44-4B68-9171-03F9D4F71E9A}|AkademiaPrzygod.Console\\AkademiaPrzygod.Console.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CECBE35-4C44-4B68-9171-03F9D4F71E9A}|AkademiaPrzygod.Console\\AkademiaPrzygod.Console.csproj|solutionrelative:akademiaprzygod.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|c:\\users\\28mat\\documents\\szko\u0142a\\wpf\\akademiaprzygod\\akademiaprzygod.core\\models\\bohater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|solutionrelative:akademiaprzygod.core\\models\\bohater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|c:\\users\\28mat\\documents\\szko\u0142a\\wpf\\akademiaprzygod\\akademiaprzygod.core\\static\\konfiguracja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|solutionrelative:akademiaprzygod.core\\static\\konfiguracja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|c:\\users\\28mat\\documents\\szko\u0142a\\wpf\\akademiaprzygod\\akademiaprzygod.core\\static\\statystyki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|solutionrelative:akademiaprzygod.core\\static\\statystyki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|c:\\users\\28mat\\documents\\szko\u0142a\\wpf\\akademiaprzygod\\akademiaprzygod.core\\models\\walka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|solutionrelative:akademiaprzygod.core\\models\\walka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.wpf\\sklepwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|solutionrelative:akademiaprzygod.wpf\\sklepwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|c:\\users\\28mat\\documents\\szko\u0142a\\wpf\\akademiaprzygod\\akademiaprzygod.wpf\\walkawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|solutionrelative:akademiaprzygod.wpf\\walkawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.core\\models\\walka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|solutionrelative:akademiaprzygod.core\\models\\walka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.wpf\\grawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|solutionrelative:akademiaprzygod.wpf\\grawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.core\\models\\bohater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|solutionrelative:akademiaprzygod.core\\models\\bohater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.core\\static\\konfiguracja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|solutionrelative:akademiaprzygod.core\\static\\konfiguracja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.core\\static\\statystyki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0BD215D-ADF9-4E58-BF51-26174DD07269}|AkademiaPrzygod.Core\\AkademiaPrzygod.Core.csproj|solutionrelative:akademiaprzygod.core\\static\\statystyki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.wpf\\sklepwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|solutionrelative:akademiaprzygod.wpf\\sklepwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.wpf\\komunikatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -54,11 +58,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "GraWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\GraWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AkademiaPrzygod.WPF\\GraWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\GraWindow.xaml.cs",
+              "RelativeToolTip": "AkademiaPrzygod.WPF\\GraWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:20:58.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Walka.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.Core\\Models\\Walka.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.Core\\Models\\Walka.cs",
@@ -66,12 +82,11 @@
               "RelativeToolTip": "AkademiaPrzygod.Core\\Models\\Walka.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwEMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T18:49:54.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T18:49:54.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Bohater.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.Core\\Models\\Bohater.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.Core\\Models\\Bohater.cs",
@@ -79,12 +94,11 @@
               "RelativeToolTip": "AkademiaPrzygod.Core\\Models\\Bohater.cs",
               "ViewState": "AgIAADgAAAAAAAAAAADgv1oAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T18:44:57.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T18:44:57.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Konfiguracja.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.Core\\Static\\Konfiguracja.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.Core\\Static\\Konfiguracja.cs",
@@ -92,12 +106,11 @@
               "RelativeToolTip": "AkademiaPrzygod.Core\\Static\\Konfiguracja.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T18:42:31.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T18:42:31.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Statystyki.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.Core\\Static\\Statystyki.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.Core\\Static\\Statystyki.cs",
@@ -105,8 +118,7 @@
               "RelativeToolTip": "AkademiaPrzygod.Core\\Static\\Statystyki.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T18:42:29.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T18:42:29.389Z"
             },
             {
               "$type": "Document",
@@ -116,39 +128,38 @@
               "RelativeDocumentMoniker": "AkademiaPrzygod.Console\\Program.cs",
               "ToolTip": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.Console\\Program.cs",
               "RelativeToolTip": "AkademiaPrzygod.Console\\Program.cs",
-              "ViewState": "AgIAACYBAAAAAAAAAADgv1MBAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAcwEMBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-07T18:34:40.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "WalkaWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\WalkaWindow.xaml.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.WPF\\WalkaWindow.xaml.cs",
               "ToolTip": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\WalkaWindow.xaml.cs",
               "RelativeToolTip": "AkademiaPrzygod.WPF\\WalkaWindow.xaml.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAjwPoAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAjwPoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-06T23:10:56.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "KomunikatWindow.xaml",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\KomunikatWindow.xaml",
               "RelativeDocumentMoniker": "AkademiaPrzygod.WPF\\KomunikatWindow.xaml",
               "ToolTip": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\KomunikatWindow.xaml",
               "RelativeToolTip": "AkademiaPrzygod.WPF\\KomunikatWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-06T22:58:29.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-06T22:58:29.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "SklepWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\SklepWindow.xaml.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.WPF\\SklepWindow.xaml.cs",
@@ -156,12 +167,11 @@
               "RelativeToolTip": "AkademiaPrzygod.WPF\\SklepWindow.xaml.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwCoAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T22:53:04.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-06T22:53:04.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "KomunikatWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\KomunikatWindow.xaml.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.WPF\\KomunikatWindow.xaml.cs",
@@ -173,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "StatystykiControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\StatystykiControl.xaml.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.WPF\\StatystykiControl.xaml.cs",
@@ -185,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "StatystykiGlobalne.xaml.cs",
               "DocumentMoniker": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.WPF\\StatystykiGlobalne.xaml.cs",
               "RelativeDocumentMoniker": "AkademiaPrzygod.WPF\\StatystykiGlobalne.xaml.cs",

@@ -3,6 +3,7 @@ using AkademiaPrzygod.Core.Models;
 using AkademiaPrzygod.Core.Static;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace AkademiaPrzygod.ConsoleApp
 {
@@ -31,7 +32,7 @@ namespace AkademiaPrzygod.ConsoleApp
             {
                 Console.Clear();
                 Console.WriteLine("╔════════════════════════════╗");
-                Console.WriteLine($"║    AKADEMIA PRZYGÓD v{Konfiguracja.WersjaGry}   ║");
+                Console.WriteLine($"║  ⚔️AKADEMIA PRZYGÓD v{Konfiguracja.WersjaGry}   ║");
                 Console.WriteLine("╚════════════════════════════╝");
                 if (_bohater != null)
                 {
@@ -96,9 +97,9 @@ namespace AkademiaPrzygod.ConsoleApp
             }
 
             Console.WriteLine("\nWybierz klasę:");
-            Console.WriteLine("1. Wojownik (HP: 120, Atak: 20, Obrona: 15)");
-            Console.WriteLine("2. Mag      (HP:  80, Atak: 30, Obrona:  8)");
-            Console.WriteLine("3. Łotrzyk  (HP: 100, Atak: 25, Obrona: 10)");
+            Console.WriteLine("1.⚔️ Wojownik (HP: 120, Atak: 20, Obrona: 15)");
+            Console.WriteLine("2.🧙 Mag      (HP:  80, Atak: 30, Obrona:  8)");
+            Console.WriteLine("3.🗡️ Łotrzyk  (HP: 100, Atak: 25, Obrona: 10)");
 
             KlasaPostaci klasa = KlasaPostaci.Wojownik;
             bool poprawnaKlasa = false;
@@ -236,8 +237,10 @@ namespace AkademiaPrzygod.ConsoleApp
             {
                 Console.Clear();
                 Console.WriteLine($"⚔  WALKA: {_bohater.Imie} vs {wrog.Nazwa}");
-                Console.WriteLine($"\nTwoje HP: {_bohater.Zdrowie}/{_bohater.MaxZdrowie}");
-                Console.WriteLine($"HP wroga: {wrog.Zdrowie}/{wrog.MaxZdrowie}");
+                Console.Write("\nTwoje HP: ");
+                PasekHP(_bohater.Zdrowie, _bohater.MaxZdrowie);
+                Console.Write("HP wroga:  ");
+                PasekHP(wrog.Zdrowie, wrog.MaxZdrowie);
                 Console.WriteLine("\n1. Atak");
                 Console.WriteLine("2. Użyj przedmiot");
                 Console.WriteLine("3. Ucieknij");
@@ -269,7 +272,8 @@ namespace AkademiaPrzygod.ConsoleApp
                     if (int.TryParse(Console.ReadLine(), out int indexP) && indexP > 0)
                     {
                         _bohater.UzyjPrzedmiot(indexP - 1);
-                        Console.WriteLine($"Twoje HP po użyciu: {_bohater.Zdrowie}/{_bohater.MaxZdrowie}");
+                        Console.Write("\nTwoje HP po użyciu: ");
+                        PasekHP(_bohater.Zdrowie, _bohater.MaxZdrowie);
                     }
                     else
                     {
@@ -280,13 +284,17 @@ namespace AkademiaPrzygod.ConsoleApp
 
                     int obrazeniaWr = wrog.AtakujBohatera(_bohater);
                     Console.WriteLine($"\nWróg atakuje! Zadaje {obrazeniaWr} obrażeń!");
-                    Console.WriteLine($"Twoje HP: {_bohater.Zdrowie}/{_bohater.MaxZdrowie}");
+                    Console.Write("\nTwoje HP: ");
+                    PasekHP(_bohater.Zdrowie, _bohater.MaxZdrowie);
+                    Console.Write("HP wroga:  ");
+                    PasekHP(wrog.Zdrowie, wrog.MaxZdrowie);
                     if (!_bohater.CzyZyje())
                     {
                         Console.WriteLine("\nPoległeś...");
                         Console.ReadKey();
                         return;
                     }
+
                     Console.WriteLine("\nWciśnij dowolny przycisk aby kontynuować");
                     Console.ReadKey();
                     continue;
@@ -294,6 +302,10 @@ namespace AkademiaPrzygod.ConsoleApp
 
                 WynikTury wynik = walka.WykonajTure(akcja);
                 Console.WriteLine($"\n{wynik.Opis}");
+                Console.Write("\nTwoje HP: ");
+                PasekHP(_bohater.Zdrowie, _bohater.MaxZdrowie);
+                Console.Write("HP wroga:  ");
+                PasekHP(wrog.Zdrowie, wrog.MaxZdrowie);
 
                 if (!wynik.WalkaTrwa)
                 {
@@ -303,11 +315,13 @@ namespace AkademiaPrzygod.ConsoleApp
                         _bohater.DodajDoswiadczenie(wynik.ZdobyteXP);
                         _bohater.DodajZloto(wynik.ZdobyteZloto);
                         Statystyki.LiczbaZabitegoWrogow++;
+
                     }
                     else
                     {
                         Console.WriteLine("\nPrzegrałeś...");
                     }
+                    
                     Console.WriteLine("\nWciśnij dowolny przycisk aby kontynuować");
                     Console.ReadKey();
                     return;
@@ -400,5 +414,40 @@ namespace AkademiaPrzygod.ConsoleApp
             wieza.DodajWroga(new Wrog("👻 Duch Oblany Student", "Duch", 120, 30, 15, 100, 80, TrudnoscWroga.Trudny));
             _lokacje.Add(wieza);
         }
+
+
+        /// <summary>
+        /// Wyświetla graficzny pasek HP w konsoli z kolorem zależnym od poziomu zdrowia.
+        /// </summary>
+        /// <param name="aktualne">Aktualne HP.</param>
+        /// <param name="maksymalne">Maksymalne HP.</param>
+        /// <param name="szerokosc">Szerokość paska w znakach.</param>
+        static void PasekHP(int aktualne, int maksymalne, int szerokosc = 20)
+        {
+            int wypelnione = (int)((double)aktualne / maksymalne * szerokosc);
+            
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("[");
+            sb.Append('#', wypelnione);
+            sb.Append('.', szerokosc - wypelnione);
+            sb.Append("] ");
+            sb.Append(aktualne);
+            sb.Append("/");
+            sb.Append(maksymalne);
+
+            double procent = (double)aktualne / maksymalne;
+            if (procent > 0.5)
+                Console.ForegroundColor = ConsoleColor.Green;
+            else if (procent > 0.25)
+                Console.ForegroundColor = ConsoleColor.Yellow;
+            else
+                Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.WriteLine(sb.ToString());
+            Console.ResetColor();
+        }
     }
 }
+
+
