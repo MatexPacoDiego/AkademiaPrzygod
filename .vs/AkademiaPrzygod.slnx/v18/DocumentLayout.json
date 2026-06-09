@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CECBE35-4C44-4B68-9171-03F9D4F71E9A}|AkademiaPrzygod.Console\\AkademiaPrzygod.Console.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9CECBE35-4C44-4B68-9171-03F9D4F71E9A}|AkademiaPrzygod.Console\\AkademiaPrzygod.Console.csproj|c:\\users\\28mat\\documents\\szko\u0142a\\wpf\\akademiaprzygod\\akademiaprzygod.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CECBE35-4C44-4B68-9171-03F9D4F71E9A}|AkademiaPrzygod.Console\\AkademiaPrzygod.Console.csproj|solutionrelative:akademiaprzygod.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|c:\\users\\28mat\\documents\\szko\u0142a\\wpf\\akademiaprzygod\\akademiaprzygod.wpf\\walkawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\akademiaprzygod.wpf\\walkawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B289884F-A642-407F-A60E-7A1D454274D2}|AkademiaPrzygod.WPF\\AkademiaPrzygod.WPF.csproj|solutionrelative:akademiaprzygod.wpf\\walkawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -128,7 +128,7 @@
               "RelativeDocumentMoniker": "AkademiaPrzygod.Console\\Program.cs",
               "ToolTip": "C:\\Users\\28mat\\Documents\\szko\u0142a\\WPF\\AkademiaPrzygod\\AkademiaPrzygod.Console\\Program.cs",
               "RelativeToolTip": "AkademiaPrzygod.Console\\Program.cs",
-              "ViewState": "AgIAAA0BAAAAAAAAAAAcwEMBAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAcwDMBAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-07T18:34:40.587Z",
               "EditorCaption": ""
@@ -143,8 +143,7 @@
               "RelativeToolTip": "AkademiaPrzygod.WPF\\WalkaWindow.xaml.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAjwPoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T23:10:56.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-06T23:10:56.581Z"
             },
             {
               "$type": "Document",
